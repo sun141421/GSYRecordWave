@@ -10,7 +10,6 @@ import android.graphics.PorterDuff;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
@@ -139,9 +138,9 @@ public class AudioWaveView extends View {
 
         if (attrs != null) {
             TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.waveView);
-            mOffset = ta.getInt(R.styleable.waveView_waveOffset, dip2px(context, -11));
-            mWaveColor = ta.getColor(R.styleable.waveView_waveColor, Color.WHITE);
-            mWaveCount = ta.getInt(R.styleable.waveView_waveCount, 2);
+            mOffset = ta.getInt(R.styleable.waveView_gsy_waveOffset, dip2px(context, -11));
+            mWaveColor = ta.getColor(R.styleable.waveView_gsy_waveColor, Color.WHITE);
+            mWaveCount = ta.getInt(R.styleable.waveView_gsy_waveCount, 2);
             ta.recycle();
         }
 
